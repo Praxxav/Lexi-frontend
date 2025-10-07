@@ -1,8 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Document Analysis Platform - Frontend
+
+This is the Next.js/React frontend for the AI-powered document analysis platform. It provides the user interface for uploading documents, generating templates, and viewing AI-driven insights from the backend service.
+
+## Features
+
+-   **Secure Document Upload**: A user-friendly interface to upload `.docx` and `.pdf` files for analysis.
+-   **Automated Template Generation**: Leverages the backend's AI to automatically generate editable Markdown templates from uploaded documents, identifying key variables.
+-   **Interactive Template Editor**: Allows users to review, edit, and refine the generated templates before saving them.
+-   **View Document Status & Insights**: (Future) A dashboard to see document processing status, summaries, and extracted entities.
+-   **Interactive Q&A**: (Future) A chat-like interface to ask specific questions about the content of a processed document.
 
 ## Getting Started
 
-First, run the development server:
+### 1. Prerequisites
+
+-   Node.js 18.17 or later.
+-   The backend server must be running (typically at `http://127.0.0.1:8000`).
+
+### 2. Configure Environment Variables
+
+Create a file named `.env.local` in the `frontend` directory. This file will hold the URL for the backend API.
+
+```properties
+NEXT_PUBLIC_API_BASE_URL="http://127.0.0.1:8000"
+```
+
+### 3. Install Dependencies and Run
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,8 +41,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
