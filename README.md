@@ -1,14 +1,20 @@
-# Document Analysis Platform - Frontend
+# Lexi - Intelligent Document Drafting Frontend
 
-This is the Next.js/React frontend for the AI-powered document analysis platform. It provides the user interface for uploading documents, generating templates, and viewing AI-driven insights from the backend service.
+This is the Next.js/React frontend for **Lexi**, the AI-powered document drafting and analysis platform. It provides the user interface for the entire document lifecycle, from generating templates to drafting new documents and analyzing existing ones.
 
 ## Features
 
--   **Secure Document Upload**: A user-friendly interface to upload `.docx` and `.pdf` files for analysis.
--   **Automated Template Generation**: Leverages the backend's AI to automatically generate editable Markdown templates from uploaded documents, identifying key variables.
--   **Interactive Template Editor**: Allows users to review, edit, and refine the generated templates before saving them.
--   **View Document Status & Insights**: (Future) A dashboard to see document processing status, summaries, and extracted entities.
--   **Interactive Q&A**: (Future) A chat-like interface to ask specific questions about the content of a processed document.
+This frontend is designed to interact with all of the backend's powerful features:
+
+-   **Template Generation**: Upload a `.docx`, `.pdf`, or `.txt` file to have the AI generate a reusable Markdown template.
+-   **Template Management**: A UI to save, browse, and manage all your document templates.
+-   **Intelligent Drafting Workflow**:
+    -   Start a draft with a natural language query (e.g., "draft a non-disclosure agreement for a new client").
+    -   The UI will help find an existing template or bootstrap a new one from the web.
+    -   Answer a series of simple, AI-generated questions to fill in the document's variables.
+    -   Review and export the final document as a `.docx` or `.pdf`.
+-   **Document Analysis Dashboard**: (Future) A central place to view the status of uploaded documents, see AI-generated summaries, and explore extracted entities.
+-   **Document Q&A**: (Future) An interactive chat interface to ask specific questions about the content of an analyzed document.
 
 ## Getting Started
 
