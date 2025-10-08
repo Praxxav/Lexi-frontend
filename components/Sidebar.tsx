@@ -7,6 +7,7 @@ import { FilePlus2, LayoutGrid, MessageSquare } from 'lucide-react';
 const navigation = [
   { name: 'Create Template', href: '/dashboard', icon: FilePlus2 },
   { name: 'Templates', href: '/templates', icon: LayoutGrid },
+  { name: 'Chat', href: '/dashboard/chat', icon: MessageSquare },
 ];
 
 function classNames(...classes: string[]) {

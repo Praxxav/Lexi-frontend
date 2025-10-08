@@ -45,9 +45,6 @@ export const saveTemplate = async (templateMarkdown: string): Promise<{ message:
   return response.json();
 };
 
-/**
- * Defines the structure of a Template object returned from the API.
- */
 export interface Template {
   id: string;
   title: string;

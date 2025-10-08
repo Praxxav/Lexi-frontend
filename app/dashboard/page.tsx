@@ -1,10 +1,9 @@
-import TemplateUploader from '@/components/TemplateUploader';
-import ChatDraft from '@/components/ChatDraft';
+import TemplateUploader from '@/components/Features/templates/TemplateUploader';
 export default function DashboardPage() {
   return (
     <div>
       <TemplateUploader />
-      <ChatDraft />
+
    
     </div>
   );
